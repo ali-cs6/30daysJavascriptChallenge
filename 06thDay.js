@@ -51,4 +51,4 @@ const TwoDArray = [
 console.log(TwoDArray);
 
 // task 13:
-console.log(TwoDArray[1][1]);
+console.log(TwoDArray[1][1])
