@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 9</title>
+    <style>
+        .forButton{
+            background-color: #f9f0ff;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main" id="mainDiv">
+        <p id="firstParagraph" class="paragraph">Lorem ipsum</p>
+    </div>
+    <ul class="list">
+        <li>1st Line</li>
+        <li>2nd Line</li>
+        <li>3rd line</li>
+    </ul>
+    <p class="forButton">Click The Button below to Change Text</p>
+    <button>Click Me</button>
+</body>
+<script>
+    // task 1:
+    let selectingByID = document.querySelector('#firstParagraph');
+    selectingByID.innerHTML = "Text Changed";
+    // task 2:
+    let selectingByClass = document.querySelector(".paragraph");
+    selectingByClass.style.backgroundColor = '#118800';
+    //task 3:
+    let newDiv = document.createElement('div');
+    newDiv.innerHTML = "IDK what to write";
+    document.body.appendChild(newDiv);
+    // task 4:
+    let newLi = document.createElement('li');
+    newLi.innerHTML = "added li";
+    document.querySelector(".list").appendChild(newLi);
+    // task 5:
+    // let deleteElement = document.querySelector("li:nth-child(2)");
+    // deleteElement.remove();
+    // task 6:
+    let removeLastChild = document.querySelector("li:last-child");
+    removeLastChild.remove();
+    // task 7:
+    let changeProp = document.getElementById("mainDiv");
+    changeProp.setAttribute("class", "container");
+    // task 8:
+    let addClass = document.querySelector("li:nth-child(3)");
+    addClass.setAttribute("class", "3rdli");
+    // task 9:
+    let btn = document.querySelector('button');
+    btn.addEventListener('click', ()=>{
+        let changeText = document.querySelector(".forButton");
+        changeText.innerHTML = "Text Changed successfully, hehe";
+    });
+    // task 10:
+    let randomBorderColor = () => {
+        let hexaString = "123456789ABCDEF";
+        let color = "#";
+        for(let i = 1; i <= 6; i++){ //6 times e.g #123456
+            color += hexaString[Math.floor(Math.random() * 16)]; 
+        }
+        return color;
+    }
+    let changeBorderColor = document.querySelector('.forButton');
+
+    changeBorderColor.addEventListener('mouseover', ()=>{
+        changeBorderColor.style.borderColor = randomBorderColor();
+    })
+</script>
+</html>
