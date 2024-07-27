@@ -100,4 +100,3 @@ Promise.all([randPromise1, randPromise2, randPromise3]).then((values) => {
 Promise.race([randPromise1, randPromise2, randPromise3]).catch((value) => {
     console.log("Fastest: ", value);
 });
-
