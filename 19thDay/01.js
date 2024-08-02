@@ -4,7 +4,6 @@ let str1 = "Javascript is easy, javascript is good, javascript hehe";
 let matches1 = str1.match(regex1);
 console.log(matches1);
 
-
 // task 2
 const regex2 = /\d/g;
 let str2 = "123 and 6 which is 9 hehe";

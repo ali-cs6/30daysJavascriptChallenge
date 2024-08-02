@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 7</title>
+</head>
+
+<body>
+
+    <form id="sessionForm">
+        <input type="text" id="sessionName" placeholder="Name" required />
+        <input type="email" id="sessionEmail" placeholder="Email" required />
+        <button type="submit">Save</button>
+    </form>
+    <div id="sessionData"></div>
+
+</body>
+<script>
+
+    document.getElementById("sessionForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const name = document.getElementById("sessionName").value;
+        const email = document.getElementById("sessionEmail").value;
+        sessionStorage.setItem("userData", JSON.stringify({ name, email }));
+        displaySessionData();
+    });
+
+    // Display saved data on page load
+    function displaySessionData() {
+        const savedUserData = JSON.parse(sessionStorage.getItem("sessionData"));
+        if (savedUserData) {
+            document.getElementById(
+                "sessionData"
+            ).textContent = `Name: ${savedUserData.name}, Email: ${savedUserData.email}`;
+        }
+    }
+
+    displaySessionData(); // for already present Data
+
+</script>
+
+</html>

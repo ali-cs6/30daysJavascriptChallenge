@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+
+<body>
+    <form id="userForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <button type="submit">Save</button>
+    </form>
+    <div id="savedData"></div>
+</body>
+<script>
+    // Save form data to localStorage
+    document.getElementById("userForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        localStorage.setItem("userData", JSON.stringify({ name, email }));
+        displayData();
+    });
+
+    // Display saved data on page load
+    function displayData() {
+        const savedData = JSON.parse(localStorage.getItem("userData"));
+        if (savedData) {
+            document.getElementById(
+                "savedData"
+            ).textContent = `Name: ${savedData.name}, Email: ${savedData.email}`;
+        }
+    }
+
+    displayData();
+
+</script>
+
+</html>
