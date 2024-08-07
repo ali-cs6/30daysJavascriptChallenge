@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 450px; /* Slightly increased size */
+    background: linear-gradient(180deg, #ff7e5f, #feb47b);
+    color: #fff;
+    margin: 80px auto;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.weather2 {
+    font-size: 5rem;
+    margin: 10px 0;
+}
+
+.weather3 {
+    margin-bottom: 40px;
+}
+
+.weather p {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.weather1 img {
+    width: 120px;
+    margin-top: 20px;
+}
+
+nav {
+    height: 80px;
+    border-radius: 20px; /* Match container's border radius */
+    padding: 10px 0;
+    width: 90%; /* Align with container width */
+    position: fixed;
+    bottom: 10px; /* Positioned 10px below the container */
+    left: 50%;
+    transform: translateX(-50%); /* Center the nav */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+    background-color: #333;
+}
+
+nav form {
+    width: 100%; /* Match container width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchField {
+    font-size: 1rem;
+    outline: none;
+    color: #333;
+    background-color: #fff;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 100%; /* Fill the width of the form */
+}
+
+nav form button {
+    background-color: #ff7e5f;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav form button:hover {
+    background-color: #feb47b;
+}
