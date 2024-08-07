@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./movieSearch.css">
+
+</head>
+
+<body>
+    <!-- Activity 1: Setting Up the Project
+    Task 1: Initialize a new project directory and set up the basic HTML structure for the movie search app.
+    Task 2: Add a basic CSS file to style the movie search app, including a container for displaying movie search results. -->
+    <div class="container">
+        <h3 class="gupter-bold" id="head">Movie-Directory</h3>
+        <!-- Activity 3: Adding Search Functionality
+        Task 5: Add an input field and a search button to the HTML structure. Style the input and button using CSS. -->
+        <div class="search">
+            <form id="mform">
+                <div class="input">
+                    <label for="search">Search:</label>
+                    <input type="text" name="search" id="search">
+                </div>
+                <input type="submit" name="submit" id="submit" value="Submit">
+
+            </form>
+        </div>
+
+        <!-- Activity 2: Fetching Movie Data
+        Task 4: Parse the movie data and display the movie title, poster, and release year on the web page. -->
+        <div class="moviebox">
+            <div class="moviePoster gupter-bold movie">
+                <img src="./Images/movie.jpg" alt="Movie" width="100%" height="100%" id="poster">
+            </div>
+            <div class="detailsMovie">
+                <div class="movieTitle gupter-bold movie">
+                    Title
+                </div>
+                <div class="movieRelease gupter-bold movie">
+                    Release
+                </div>
+            </div>
+        </div>
+        <!-- Activity 4: Displaying Detailed Movie Information
+        Task 8: Create a modal or a new section on the page to display the detailed movie information. -->
+        <div id="more" class="gupter-bold">More</div>
+        <div id="modal">
+            <div class="detailedInfo">
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="./movieSearch.js"></script>
+</body>
+
+</html>

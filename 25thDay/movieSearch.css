@@ -1,0 +1,210 @@
+
+/* Activity 5: Enhancing the UI
+Task 9: Add CSS styles to improve the layout and design of the search results and detailed movie information.
+Task 10: Add CSS animations or transitions to make the movie search app more interactive and visually appealing. */
+
+
+.gupter-regular {
+    font-family: "Gupter", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .gupter-medium {
+    font-family: "Gupter", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .gupter-bold {
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  body{
+    background-image: url('./Images/movieThreatre.jpg');
+    background-size: cover;
+  }
+
+  .container{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #head{
+    font-size: 35px;
+    color: white;
+    width: fit-content;
+    margin: 2px auto;
+  }
+
+  .search{
+    background:linear-gradient(45deg,rgb(15, 15, 28),rgb(233, 55, 55),rgb(15, 15, 28));
+  }
+
+  .search{
+    margin-top: 20px;
+  }
+
+  #mform{
+    width: 50vw;
+    height: 40px;
+    margin: 2px auto;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    font-family: "Gupter";
+    font-weight: 600;
+    padding: 5px;
+    color: white;
+    font-size: 25px;
+}   
+
+.input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: "Gupter";
+}
+
+#search{
+    width: 82%;
+    border: 5px dotted rgb(243, 67, 67);
+    font-weight: 700;
+    height: 30px;
+    font-size: 28px;
+    border-radius: 5px;
+    color: rgb(30, 12, 47);
+}
+
+#submit{
+    font-family: "Gupter";
+    font-weight: 600;
+    height: 35px;
+    font-size: 25px;
+    border: 3px solid rgb(179, 150, 206);
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(45deg,rgb(218, 57, 57),rgb(99, 99, 196));
+}
+
+#submit:hover{
+    cursor: pointer;
+}
+
+  .moviebox{
+    border: 2px solid white;
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 2px auto;
+    margin-top: 2rem;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .detailsMovie{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  }
+
+
+  
+
+  .movie{
+    color: rgb(225, 208, 208);
+  }
+
+ 
+
+  .movieTitle{
+    font-size: 50px;
+  }
+
+  .movieRelease{
+    font-size: 25px;
+  }
+
+  .moviePoster{
+    width: 99%;
+    height: 60%;
+    border: 2px solid wheat;
+    border-radius: 10px;
+  }
+
+  #more{
+    color: white;
+    width: 40%;
+    height: 5%;
+    text-align: center;
+    border: 2px solid white;
+    font-size: 25px;
+    margin: 2px auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  #more:hover{
+    background:linear-gradient(45deg,rgb(15, 15, 28),rgb(233, 55, 55),rgb(15, 15, 28));
+    cursor: pointer;
+  }
+
+  #modal{
+    background:linear-gradient(45deg,rgb(15, 15, 28),rgb(244, 92, 92),rgb(15, 15, 28));
+    width: 100%;
+    height: 100%;
+    position: absolute;  
+    top: 0px;
+    visibility: hidden;
+    
+}
+  .detailedInfo{
+    background:linear-gradient(45deg,rgb(15, 15, 28),rgb(233, 55, 55),rgb(15, 15, 28));
+    font-size: 30px;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 25%;
+    left:25%;
+    box-shadow: 20px 20px 10px rgba(32, 1, 1, 0.5);
+    border-radius: 10px;
+    color: aliceblue;
+    overflow: auto;
+    line-height: 35px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+ 
+.detailedInfo.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+  #close{
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  #close{
+    cursor: pointer;
+  }
