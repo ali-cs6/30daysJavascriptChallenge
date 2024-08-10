@@ -1,8 +1,7 @@
-# EchoSocial - Social Media Dashboard
+# VibeLink - Social Media Dashboard
 
 Welcome to the EchoSocial! This project is a simple social media dashboard web application. It allows users to sign up, create posts, and manage their account. The application uses HTML, CSS, and JavaScript, with local storage to persist posts and session storage to manage user sessions.
 
-## Preview: https://echosocial.netlify.app/
 
 ## Features
 
@@ -25,6 +24,8 @@ Welcome to the EchoSocial! This project is a simple social media dashboard web a
 /project-root
     ├── dashboard/
     │   └── dashboard.html
+    │   ├── dashboard.css
+    │   ├── dashboard.js
     ├── login-page/
     │   ├── login.css
     │   ├── login.html
@@ -39,11 +40,6 @@ Welcome to the EchoSocial! This project is a simple social media dashboard web a
     └── README.md
 ```
 
-### Prerequisites
-
-Ensure you have the following installed on your machine:
-- A modern web browser (e.g., Chrome, Firefox, Safari)
-- A code editor (e.g., VSCode, Sublime Text)
 
 ### Files and Directories
 
@@ -85,12 +81,12 @@ Ensure you have the following installed on your machine:
 
 Feel free to reach out with any questions or feedback:
 
-- **GitHub**: [megh-bari](https://github.com/megh-bari)
-- **Twitter**: [@megh_bari](https://x.com/megh_bari)
-- **Email**: [meghbari01@gmail.com](mailto:meghbari01@gmail.com).
+- **GitHub**: [ali-cs6](https://github.com/ali-cs6)
+- **LinkedIn**: [@Barkat Ali](www.linkedin.com/in/alicode6)
+- **Email**: [alicode6.cs@gmail.com](alicode6.cs@gmail.com).
 
 ## Author
 
-This repo is maintained by @ Megh bari.
+This repo is maintained by @ Barkat Ali.
 
 ## Happy Coding 🎈
