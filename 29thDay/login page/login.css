@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body {
+    overflow: hidden;
+    background-color: #1abc9c;
+}
+.container {
+    max-width: 440px;
+    padding: 0 20px;
+    margin: 170px auto;
+}
+.main {
+    width: 100%;
+    background-color: #fff;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    border-radius: 5px;
+}
+.main .title {
+    text-align: center;
+    line-height: 100px;
+    background-color: #138770;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.main form {
+    padding: 35px 25px 30px 20px;
+}
+.main form .row {
+    /* background-color: #ff0000; */
+    height: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+.main form .row input  {
+    height: 100%;
+    width: 100%;
+    padding-left: 60px;
+    outline: none;
+    border-radius: 7px;
+    border: 1px solid light;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+form .row input:focus {
+    border-color: #138770;
+    box-shadow: inset 0 0 2px 3px rgba(26, 188, 156, 0.25);
+}
+.main form .row i {
+    position: absolute;
+    background-color: #138770;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #138770;
+    color: #fff;
+    font-size: 20px;
+}
+.main form .pass {
+    margin: -10px 0px 20px 0;
+}
+.main form .pass a {
+    text-decoration: none;
+    color: #138770;
+    font-size: 18px;
+}
+.main form .pass a:hover{
+    text-decoration: underline;
+}
+
+.main form .button input  {
+    padding: 0;
+    background-color: #138770;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid #138770;
+    cursor: pointer;
+}
+.main form .button input:hover {
+    background-color: #20635a;
+}
+
+.main form .signup-link {
+    margin-top: 20px;
+    text-align: center;
+}
+.main form .signup-link a {
+    text-decoration: none;
+    color: #138770;
+    font-size: 20px;
+}
+.main form .signup-link a:hover{
+    text-decoration: underline;
+}
